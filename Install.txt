@@ -1,0 +1,12 @@
+#!/bin/bash
+
+sudo apt install qpdfview;
+sudo apt install git;
+sudo add-apt-repository ppa:alessandro-strada/ppa;
+sudo apt-get update;
+sudo apt-get install google-drive-ocamlfuse;
+google-drive-ocamlfuse;
+mkdir ~/Desktop/Google_Drive;
+google-drive-ocamlfuse ~/Desktop/Google_Drive;
+sudo apt install gdebi;
+
