@@ -9,4 +9,4 @@ google-drive-ocamlfuse;
 mkdir ~/Desktop/Google_Drive;
 google-drive-ocamlfuse ~/Desktop/Google_Drive;
 sudo apt install gdebi;
-
+sudo apt install imwheel
