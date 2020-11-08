@@ -10,3 +10,7 @@ mkdir ~/Desktop/Google_Drive;
 google-drive-ocamlfuse ~/Desktop/Google_Drive;
 sudo apt install gdebi;
 sudo apt install imwheel
+sudo apt install lib32z1
+sudo apt install ffmpeg
+sudo add-apt-repository ppa:obsproject/obs-studio
+sudo apt install obs-studio
