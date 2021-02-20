@@ -8,6 +8,10 @@ case $- in
       *) return;;
 esac
 
+# os stuff
+export PINTOS=/home/matt/CLionProjects/Operating_Systems/os-sp21-get-an-a-on-pintos
+export PATH=$PATH:$PINTOS/utils
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -86,20 +90,25 @@ fi
 
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
-
-# some more ls aliases
+#some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+# normally turns on keyboard lights, if they turn off for some reason run
+# xset -led named "Scroll Lock" 
+# then xset led named "Scroll Lock"
+xset led named "Scroll Lock"
+# my aliases
 alias d='cd ~/Desktop'
 alias lrc='ssh mprinz@mario.ece.utexas.edu'
 alias g='cd ~/Desktop/Google_Drive'
-alias ca='cd ~/Desktop/Google_Drive/UT\ Austin\ \(Computers\)/Fall\ 2020/EE\ 460N'
+alias ca='cd ~/CLionProjects/EE_460N_Labs'
 alias s='cd ~/Desktop/Google_Drive/UT\ Austin\ \(Computers\)/Fall\ 2020/'
 alias dsp='cd ~/Desktop/Google_Drive/UT\ Austin\ \(Computers\)/Fall\ 2020/EE\ 461P'
 alias m='cd ~/Desktop/Google_Drive/UT\ Austin\ \(Computers\)/Fall\ 2020/M\ 362M'
-alias l='cd ~/Desktop/EE_460N_Labs'
-
+alias dl='cd ~/Downloads'
+alias p='cd ~/PycharmProjects'
+alias os='cd ~/CLionProjects/Operating_Systems'
 qpdf()
 {
 	for var in "$@"
