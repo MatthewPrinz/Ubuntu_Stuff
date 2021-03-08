@@ -8,10 +8,6 @@ case $- in
       *) return;;
 esac
 
-# os stuff
-export PINTOS=/home/matt/CLionProjects/Operating_Systems/os-sp21-get-an-a-on-pintos
-export PATH=$PATH:$PINTOS/utils
-
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -108,7 +104,7 @@ alias dsp='cd ~/Desktop/Google_Drive/UT\ Austin\ \(Computers\)/Fall\ 2020/EE\ 46
 alias m='cd ~/Desktop/Google_Drive/UT\ Austin\ \(Computers\)/Fall\ 2020/M\ 362M'
 alias dl='cd ~/Downloads'
 alias p='cd ~/PycharmProjects'
-alias os='cd ~/CLionProjects/Operating_Systems'
+alias os='cd /home/matt/CLionProjects/Operating_Systems/os-sp21-get-an-a-on-pintos'
 qpdf()
 {
 	for var in "$@"
@@ -142,3 +138,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# os stuff
+export PINTOS=/home/matt/CLionProjects/Operating_Systems/os-sp21-get-an-a-on-pintos
+export PATH=$PATH:$PINTOS/utils
