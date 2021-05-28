@@ -1,0 +1,9 @@
+#!/bin/bash
+# download meslo by using this link: https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Meslo.zip
+# save it to downloads
+cd ~
+mkdir .fonts
+unzip ~/Downloads/Meslo.zip -d ~/.fonts/Meslo
+fc-cache -fv
+
+# now, in the terminal window go to Edit -> Preferences -> custom font -> MesloLGS NF Regular, size 20.
