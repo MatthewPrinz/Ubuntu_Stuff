@@ -7,7 +7,7 @@ case $- in
     *i*) ;;
       *) return;;
 esac
-
+eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/paradox.omp.json)"
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -142,3 +142,4 @@ fi
 # os stuff
 export PINTOS=/home/matt/CLionProjects/Operating_Systems/os-sp21-get-an-a-on-pintos
 export PATH=$PATH:$PINTOS/utils
+source "$HOME/.cargo/env"
